@@ -23,7 +23,7 @@ export default {
 				github: "https://github.com/vavarine",
 				portfolio: "https://github.com/vavarine",
 			},
-			experience: [
+			workExperience: [
 				{
 					company: {
 						name: "e-Plus",
