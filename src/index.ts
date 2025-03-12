@@ -13,6 +13,78 @@
 
 export default {
 	async fetch(request, env, ctx): Promise<Response> {
-		return new Response('Hello World!');
+		const infoJson = {
+			contact: {
+				email: "contato@evailson.dev"
+			},
+			links: {
+				linkedin: "https://www.linkedin.com/in/evailson/",
+				github: "https://github.com/vavarine",
+				portfolio: "https://github.com/vavarine",
+			},
+			experience: [
+				{
+					company: {
+						name: "e-Plus",
+						url: "https://www.agenciaeplus.com.br/",
+					},
+					role: "Desenvolvedor Full Stack Web Pleno",
+					description: "Desenvolvedor Full Stack Web Pleno",
+					period: {
+						start: "2021-01-01",
+						end: null,
+					},
+				}
+			],
+			academicBackground: [
+				{
+					degree: "Pós-graduação em Arquitetura de Software",
+					institution: "FIAP",
+					period: {
+						start: "2025-03-01",
+						end: null,
+					},
+				},
+				{
+					degree: "Análise e Desenvolvimento de Sistemas",
+					institution: "Fatec São Caetano do Sul",
+					period: {
+						start: "2019-01-01",
+						end: "2021-01-01",
+					},
+				},
+				{
+					degree: "Técnico em Análise e Desenvolvimento de Sistemas",
+					institution: "Etec Mauá",
+					period: {
+						start: "2018-01-01",
+						end: "2019-06-01",
+					},
+				},
+				{
+					degree: "Técnico em Administração",
+					institution: "Etec Mauá",
+					period: {
+						start: "2017-01-01",
+						end: "2018-06-01",
+					},
+				}
+			],
+			languages: [
+				"English",
+				"Portuguese",
+			],
+			location: {
+				country: "Brazil",
+				state: "São Paulo",
+				city: "São Paulo",
+			},
+		}
+
+		return new Response(JSON.stringify(infoJson), {
+			headers: {
+				"Content-Type": "application/json",
+			},
+		});
 	},
 } satisfies ExportedHandler<Env>;
