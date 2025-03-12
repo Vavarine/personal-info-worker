@@ -15,7 +15,8 @@ export default {
 	async fetch(request, env, ctx): Promise<Response> {
 		const infoJson = {
 			contact: {
-				email: "contato@evailson.dev"
+				email: "contato@evailson.dev",
+				discord: "https://discord.com/users/394131988023476235",
 			},
 			links: {
 				linkedin: "https://www.linkedin.com/in/evailson/",
