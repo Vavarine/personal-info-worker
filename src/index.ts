@@ -51,7 +51,7 @@ export default {
 					institution: "Fatec São Caetano do Sul",
 					period: {
 						start: "2019-01-01",
-						end: "2021-01-01",
+						end: "2022-01-01",
 					},
 				},
 				{
