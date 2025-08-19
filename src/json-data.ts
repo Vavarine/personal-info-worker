@@ -1,4 +1,8 @@
 export const jsonData = {
+  curriculum: {
+    english: "https://info.evailson.dev/en-cv.pdf",
+    portuguese: "https://info.evailson.dev/pt-cv.pdf"
+  },
   contact: {
     email: "contato@evailson.dev",
     discord: "https://discord.com/users/394131988023476235",
